@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>นโยบายความเป็นส่วนตัว | ธรรมะโฆษก</title>
+    <meta
+      name="description"
+      content="นโยบายความเป็นส่วนตัวของแอปธรรมะโฆษก (Thamma Kosit)"
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f4f3fb;
+        --paper: #ffffff;
+        --line: #dedbf0;
+        --text: #3d3a60;
+        --muted: #6b6890;
+        --accent: #426bdc;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans Thai",
+          sans-serif;
+        line-height: 1.75;
+      }
+
+      main {
+        width: min(100% - 32px, 840px);
+        margin: 0 auto;
+        padding: 48px 0;
+      }
+
+      article {
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: clamp(24px, 4vw, 48px);
+      }
+
+      h1,
+      h2 {
+        line-height: 1.25;
+        margin: 0;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 5vw, 3.25rem);
+        letter-spacing: 0;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+        margin-top: 32px;
+      }
+
+      p {
+        margin: 12px 0 0;
+      }
+
+      .eyebrow {
+        color: var(--accent);
+        font-weight: 700;
+        margin: 0 0 8px;
+      }
+
+      .updated {
+        color: var(--muted);
+        margin-top: 10px;
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      footer {
+        color: var(--muted);
+        font-size: 0.95rem;
+        margin-top: 28px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article>
+        <p class="eyebrow">Thamma Kosit</p>
+        <h1>นโยบายความเป็นส่วนตัว</h1>
+        <p class="updated">อัปเดตล่าสุด: 2 พฤษภาคม 2569</p>
+
+        <h2>ภาพรวม</h2>
+        <p>
+          ธรรมะโฆษก (Thamma Kosit) ออกแบบด้วยแนวคิด local-first แอปไม่มีระบบ login
+          ไม่ต้องสมัครสมาชิก และไม่เก็บข้อมูลส่วนบุคคลของคุณบน server ของเรา
+          เจตนาของแอปคือส่งต่อธรรมะโดยไม่แสวงหาผลประโยชน์ใด ๆ
+        </p>
+
+        <h2>ข้อมูลที่เก็บในเครื่องของคุณ</h2>
+        <p>
+          รายการโปรด, ความคืบหน้าการฟัง, รายการดาวน์โหลด, ตอนที่ฟังล่าสุด,
+          สถิติการฟังส่วนตัว และตั้งค่าส่วนตัว เก็บอยู่ในเครื่องของคุณผ่าน
+          local storage ของแอป คุณสามารถลบข้อมูลเหล่านี้ได้จากเมนูตั้งค่าของแอป
+          หรือลบแอปออกจากเครื่อง
+        </p>
+
+        <h2>ข้อมูลที่ดึงจากเน็ตเวิร์ก</h2>
+        <p>
+          เมื่อเปิดแอป แอปจะดึงรายการตอนจาก Firebase Firestore และไฟล์เสียงจาก
+          Cloudflare R2 การเชื่อมต่อเหล่านี้อาจมี standard HTTPS logs เช่น IP
+          address, เวลาเชื่อมต่อ และข้อมูลทางเทคนิคของคำขอ โดยผู้ให้บริการระบบ
+          ใช้เพื่อความปลอดภัย การป้องกันการโจมตี และการแก้ไขปัญหาทางเทคนิค
+        </p>
+
+        <h2>Analytics</h2>
+        <p>
+          แอปไม่ใช้ advertising identifier, tracking pixel, Firebase Analytics
+          หรือระบบโฆษณาใด ๆ แอปมีเพียงสถิติการฟังแบบ first-party anonymous
+          เพื่อดูตอนยอดนิยมและจำนวนผู้ฟังรวม เช่น episode id, จำนวนครั้งที่เปิดฟัง,
+          เวลาฟังรวม, การฟังจบ, การดาวน์โหลด และ anonymous device id แบบสุ่ม
+          ที่ไม่ผูกกับชื่อ อีเมล หรือบัญชีผู้ใช้
+        </p>
+
+        <h2>การแชร์ข้อมูล</h2>
+        <p>
+          เราไม่ขายข้อมูลผู้ใช้ ไม่แชร์ข้อมูลเพื่อโฆษณา และไม่ใช้ข้อมูลเพื่อติดตามคุณข้ามแอปหรือเว็บไซต์อื่น
+          ข้อมูลทางเทคนิคอาจถูกประมวลผลโดยผู้ให้บริการ infrastructure ที่จำเป็นต่อการทำงานของแอป
+          เช่น Firebase และ Cloudflare
+        </p>
+
+        <h2>เด็กและเยาวชน</h2>
+        <p>
+          แอปนี้เหมาะสำหรับทุกเพศทุกวัย ไม่มีโฆษณา ไม่มีการซื้อภายในแอป
+          และไม่มีระบบสนทนาหรือการติดต่อระหว่างผู้ใช้
+        </p>
+
+        <h2>การเปลี่ยนแปลงนโยบาย</h2>
+        <p>
+          หากมีการเปลี่ยนแปลงนโยบายความเป็นส่วนตัว เราจะอัปเดตวันที่ด้านบนของหน้านี้
+          คุณสามารถกลับมาอ่านนโยบายฉบับล่าสุดได้จาก URL นี้
+        </p>
+
+        <h2>ติดต่อ</h2>
+        <p>
+          หากมีคำถามเกี่ยวกับความเป็นส่วนตัว ติดต่อผู้พัฒนาได้ที่
+          <a href="mailto:chamcharus072@gmail.com">chamcharus072@gmail.com</a>
+        </p>
+
+        <footer>iJam Studio / Thamma Kosit</footer>
+      </article>
+    </main>
+  </body>
+</html>
