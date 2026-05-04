@@ -1,0 +1,79 @@
+name: แจ้งปัญหาการใช้งาน
+description: ใช้ฟอร์มนี้เพื่อแจ้งปัญหาในแอปธรรมะโฆษก
+title: "[Support]: "
+labels: ["support"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ขอบคุณที่แจ้งปัญหา กรุณากรอกข้อมูลเท่าที่ทราบเพื่อให้ทีมงานตรวจสอบได้เร็วขึ้น
+
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: ประเภทปัญหา
+      description: เลือกหัวข้อที่ใกล้เคียงที่สุด
+      options:
+        - เล่นเสียงไม่ได้
+        - ดาวน์โหลดไว้ฟังออฟไลน์ไม่ได้
+        - ค้นหา/หมวดหมู่ไม่ถูกต้อง
+        - ข้อมูลตอนหรือชื่อเรื่องผิด
+        - แอปค้าง/เด้งออก
+        - ข้อเสนอแนะ
+        - อื่นๆ
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: รายละเอียดปัญหา
+      description: อธิบายสิ่งที่เกิดขึ้น และสิ่งที่คาดหวังให้เกิดขึ้น
+      placeholder: เช่น กดเล่นตอนหนึ่งแล้วไม่มีเสียง หรือดาวน์โหลดแล้วเปิดฟังตอน offline ไม่ได้
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: ขั้นตอนที่ทำให้เกิดปัญหา
+      description: ถ้าทำซ้ำได้ กรุณาเขียนเป็นลำดับขั้น
+      placeholder: |
+        1. เปิดแอป
+        2. เข้าเมนู...
+        3. กด...
+        4. พบปัญหา...
+    validations:
+      required: false
+
+  - type: input
+    id: device
+    attributes:
+      label: รุ่นอุปกรณ์
+      placeholder: เช่น iPhone 15, iPad Air, Samsung Galaxy S24
+    validations:
+      required: false
+
+  - type: input
+    id: os_version
+    attributes:
+      label: เวอร์ชันระบบปฏิบัติการ
+      placeholder: เช่น iOS 18.5, Android 15
+    validations:
+      required: false
+
+  - type: input
+    id: app_version
+    attributes:
+      label: เวอร์ชันแอป
+      placeholder: เช่น 1.0.0
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: รูปภาพหรือข้อมูลเพิ่มเติม
+      description: หากมี screenshot หรือข้อความ error สามารถแนบไว้ตรงนี้
+    validations:
+      required: false

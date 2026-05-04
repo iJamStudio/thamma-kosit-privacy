@@ -100,6 +100,17 @@
         color: var(--accent);
       }
 
+      .button {
+        display: inline-block;
+        margin-top: 16px;
+        border-radius: 8px;
+        background: var(--accent);
+        color: #ffffff;
+        font-weight: 700;
+        padding: 10px 16px;
+        text-decoration: none;
+      }
+
       footer {
         font-size: 0.95rem;
         margin-top: 28px;
@@ -127,9 +138,15 @@
 
         <h2>ขอความช่วยเหลือ</h2>
         <p>
-          หากพบปัญหาการใช้งาน สามารถแจ้งรายละเอียดผ่าน GitHub Issues ของหน้า support นี้:
-          <a href="https://github.com/iJamStudio/thamma-kosit-privacy/issues"
-            >github.com/iJamStudio/thamma-kosit-privacy/issues</a
+          หากพบปัญหาการใช้งาน กดปุ่มด้านล่างเพื่อเปิดแบบฟอร์มแจ้งปัญหา
+          ระบบจะมีช่องให้กรอกประเภทปัญหา รายละเอียด รุ่นอุปกรณ์ เวอร์ชันระบบ
+          และข้อมูลเพิ่มเติมที่จำเป็น
+        </p>
+        <p>
+          <a
+            class="button"
+            href="https://github.com/iJamStudio/thamma-kosit-privacy/issues/new?template=support-request.yml"
+            >เปิดฟอร์มแจ้งปัญหา</a
           >
         </p>
         <p>

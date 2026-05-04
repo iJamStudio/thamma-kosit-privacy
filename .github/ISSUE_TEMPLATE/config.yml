@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: อ่านนโยบายความเป็นส่วนตัว
+    url: https://ijamstudio.github.io/thamma-kosit-privacy/
+    about: ดูข้อมูลการจัดการข้อมูลส่วนตัวของแอปธรรมะโฆษก
+  - name: อ่านข้อกำหนดการใช้งาน
+    url: https://ijamstudio.github.io/thamma-kosit-privacy/terms.html
+    about: ดูข้อกำหนดการใช้งานและข้อจำกัดความรับผิด
