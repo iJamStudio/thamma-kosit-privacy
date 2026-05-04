@@ -85,11 +85,31 @@
         font-size: 0.95rem;
         margin-top: 28px;
       }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin: 0 0 24px;
+      }
+
+      nav a {
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 6px 14px;
+        text-decoration: none;
+        background: #fbfaff;
+      }
     </style>
   </head>
   <body>
     <main>
       <article>
+        <nav aria-label="Site navigation">
+          <a href="./">Privacy</a>
+          <a href="./support.html">Support</a>
+          <a href="./terms.html">Terms</a>
+        </nav>
         <p class="eyebrow">Thamma Kosit</p>
         <h1>นโยบายความเป็นส่วนตัว</h1>
         <p class="updated">อัปเดตล่าสุด: 2 พฤษภาคม 2569</p>
